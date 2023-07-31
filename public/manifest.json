@@ -1,0 +1,16 @@
+{
+    "name": "Footprynt - Digital Marketing Company",
+    "short_name": "Footprynt",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#6610f2",
+    "background_color": "#6610f2",
+    "description": "Footprynt - Digital Marketing Company,A digital ecosystem of brands influencers & content experts, Influencer marketing, Social media marketing, SEO, CRO & Content Management, Marketing Automation influencers & content experts, Influencer marketing, Social media marketing, SEO, CRO & Content Management , Marketing Automation, Media buying and selling, Campaign Analytics, Influencer Analytics, Influencer Discovery, Campaign Management.",
+    "lang": "en",
+    "orientation": "any",
+    "scope": "/",
+    "related_applications": ["pride.footprynt.in"],
+    "prefer_related_applications": false
+  }
+  
+    
