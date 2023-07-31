@@ -1,17 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import TotalAvatars from "./AvatarGroup";
+import ClientOnly from "@/app/client/ClientOnly";
 
-const colors = [
-  "red",
-  "blue",
-  "pink",
-  "yellow",
-  "green",
-  "purple",
-  "brown",
-  "grey",
-  "orange",
-];
 const cardstyle = {
   marginTop: "1rem",
   boxShadow:
@@ -23,23 +14,6 @@ const cardstyle = {
   cursor: "pointer",
 };
 
-const avatar = (backgroundColor) => ({
-  width: "48px",
-  height: "48px",
-  marginRight: "8px",
-  borderRadius: "50%",
-  overflow: "hidden",
-  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-  fontWeight: "600",
-  fontSize: "1.2rem",
-  color: "white",
-  display: "flex",
-  alignItems: "center",
-  flexDirection: "row",
-  justifyContent: "center",
-  backgroundColor,
-});
-
 const InfluencerCard = () => {
   return (
     <div className="container">
@@ -49,7 +23,10 @@ const InfluencerCard = () => {
         </div>
 
         <div className="content-tabs">
-          <div className="row">
+          <div className="row" style={{  
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))"
+          }}>
             <div className="col-lg-4 col-sm-6">
               <Link href="/feature_influencer?title=Top 10 Twitter Influencers&content=toptwitter&socialmedia=twitter&tab=1">
                 <div className="card" style={cardstyle}>
@@ -74,27 +51,9 @@ const InfluencerCard = () => {
                         Top Twitter Influencers
                       </h3>
                     </center>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        A
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        F
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        R
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        N
-                      </div>
-                    </div>
+                    <ClientOnly>
+                      <TotalAvatars />
+                    </ClientOnly>
                   </div>
                 </div>
               </Link>
@@ -123,27 +82,9 @@ const InfluencerCard = () => {
                         Top YouTube Influencers
                       </h3>
                     </center>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        Q
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        G
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        V
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        Z
-                      </div>
-                    </div>
+                    <ClientOnly>
+                      <TotalAvatars />
+                    </ClientOnly>
                   </div>
                 </div>
               </Link>
@@ -173,27 +114,9 @@ const InfluencerCard = () => {
                         Top Instagram Influencers
                       </h3>
                     </center>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        Y
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        R
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        J
-                      </div>
-                      <div style={avatar(colors[Math.ceil(Math.random() * 7)])}>
-                        C
-                      </div>
-                    </div>
+                    <ClientOnly>
+                      <TotalAvatars />
+                    </ClientOnly>
                   </div>
                 </div>
               </Link>
