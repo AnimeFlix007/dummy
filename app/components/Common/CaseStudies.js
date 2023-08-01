@@ -8,7 +8,10 @@ const CaseStudies = () => {
           <span>Case Studies</span>
           <h2>Have a look at our Work Showcase</h2>
         </div>
-        <div className="row row case-list">
+        <div className="row row case-list" style={{  
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))"
+          }}>
           <div className="col-lg-4 col-sm-6">
             <div className="casecard">
               <div className="single-case">

@@ -35,9 +35,9 @@ const InfluencerData = () => {
   const router = useRouter();
 
   const NavigateInfluencerHandler = (instagram) => {
-    router.push(
-      `/topinfluencerdetail/?rank=${instagram?.influencer_rank}&name=${instagram?.influencer_name}&handlename=${instagram?.influencer_handle_name}&profile=${instagram?.influencer_profile_picture}&media=${instagram?.influencer_social_media}&followers=${instagram?.follower_count}&er=${instagram?.engagement_rate}&country=${instagram?.influencer_country}`
-    );
+    // router.push(
+    //   `/topinfluencerdetail/?rank=${instagram?.influencer_rank}&name=${instagram?.influencer_name}&handlename=${instagram?.influencer_handle_name}&profile=${instagram?.influencer_profile_picture}&media=${instagram?.influencer_social_media}&followers=${instagram?.follower_count}&er=${instagram?.engagement_rate}&country=${instagram?.influencer_country}`
+    // );
   };
 
   useEffect(() => {

@@ -7,7 +7,13 @@ const BlogPost = () => {
           <span>Blog Posts</span>
           <h2>Our Regular Blogs</h2>
         </div>
-        <div className="row justify-content-center">
+        <div
+          className="row justify-content-center"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          }}
+        >
           <div className="col-lg-4 col-md-6">
             <div className="casecard">
               <div className="single-blog">
